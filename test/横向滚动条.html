@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+
+        * {
+            margin:0;
+            padding:0;
+
+        }
+        body {
+            width:660px;
+            height: 40px;
+            overflow: hidden;
+            margin:100px auto;
+        }
+        .content {
+            width: 100%;
+            overflow-x: scroll;
+              /*子元素的宽度大于父元素的即可滚动*/
+            overflow-y: hidden;
+            border-radius: 4px;
+        }
+        /*  .content::-webkit-scrollbar {display:none} // 隐藏滚动条*/
+        .redPacket{
+            display: flex;
+            float: left;  
+            /*// 使其脱离文档流 宽度为所有字元素的和*/
+            min-width: 100%;
+        }
+        .item {
+            width: 240px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            background: #999;
+            padding: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="redPacket">
+            <div class="item" style="margin-right:10px;border-radius:4px;">
+                1                
+            </div>
+            <div class="item" style="margin-right:10px;border-radius:4px;">
+                2 
+            </div>
+            <div class="item" style="margin-right:10px;border-radius:4px;">
+                3 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
